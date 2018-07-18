@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+.container {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 30% 30% 30%;
+    text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+height: 100%;
+display: grid;
+grid-template-columns: 66.6% 33.3%;
+grid-template rows: 30%}
+
+h1 {text-align: left;
+font-family: 'Open Sans Condensed';
+font-size: 4em;
+margin-left: 5%;
+}
+
+p {font-family: 'Open Sans Condensed'; font-weight: 300; font-size: 2em;
+margin-left: 5%;
+hyphens: none;}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.social {display: absolute;
+grid-column: 2;}
+
+.social li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.social .fa {
+	width: 40px;
+  height: 28px;
+	color: black;
+	padding-top: 12px;
+}
+
+.social .fa:hover {
+	color: #ffeb00;
+  opacity: .6;
+}
+
+@media screen and (max-width: 900px){
+  .header {display: block;}
+}
+
+@media screen and (max-width: 475px){
+  h1 {font-size: 3em;}
+  p {font-size: 1.5em;}
+  .container {display:block;}
+  .header {display: block;}
+  }
